@@ -45,7 +45,7 @@
     }
     /* Chequea que no haya caracteres especiales en el codificador */
     function checkString(text) {
-      if (/[^a-z\d]/.test(text.value)) {
+      if (/^[A-Z]*$/.test(text.value)) {
         Swal.fire({
           title: 'Error!',
           text: 'El texto no debe poseer caracteres especiales y debe contener solo minisculas.',
